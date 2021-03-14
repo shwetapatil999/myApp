@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,8 @@ import { NokiyaComponent } from './products/nokiya/nokiya.component';
 import { RealmeComponent } from './products/realme/realme.component';
 import { PagenofoundComponent } from './products/pagenofound/pagenofound.component';
 import { HomeComponent } from './products/home/home.component';
+import { FormsModule } from '@angular/forms';
+import { PostsComponent } from './curd/posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { HomeComponent } from './products/home/home.component';
     NokiyaComponent,
     RealmeComponent,
     PagenofoundComponent,
-    HomeComponent
+    HomeComponent,
+    PostsComponent
   ],
   imports: [//// module = group of logic
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

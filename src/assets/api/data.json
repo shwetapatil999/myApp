@@ -1,0 +1,32 @@
+{
+    "mobdata":[ 
+        {
+           "prodId": 1001,
+           "prodName": "Samsung",
+           "prodDesc": "New version",
+           "inStock": 10,
+           "width":120,
+           "img":"./../../../assets/img/background1.jpg",
+           "quantity": 0
+         },
+         {
+           "prodId": 1002,
+           "prodName": "Nokiya",
+           "prodDesc": "New version",
+           "inStock": 0,
+           "width":120, 
+           "img":"./../../../assets/img/background2.jpg",
+           "quantity": 0
+         },
+         {
+           "prodId": 1003,
+           "prodName": "Realme new",
+           "prodDesc": "New version",
+           "inStock": 1230,
+           "width":120,
+           "img":"./../../../assets/img/background3.jpg",
+           "quantity": 0
+         }
+       ]
+}    
+

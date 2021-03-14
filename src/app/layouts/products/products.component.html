@@ -25,14 +25,14 @@
                         </p>
                       </ng-template>
 
-                       <input (input)=calc($event.target.value)>
+                       <input (input)=calc($event)>
                        <h1> {{calc()}}</h1>
 
-                      <a class="btn-small" (click)=downQt(mobPart)><i class="material-icons right">add</i>button</a>
+                      <a class="btn-small" (click)=downQt(mobPart)> <i class="material-icons">+</i></a>
 
                       <input [value]="mobPart.quantity" [(ngModel)]=mobPart.quantity>
 
-                      <a class="btn-small" (click)=upQt(mobPart)><i class="material-icons right">remove</i>button</a>
+                      <a class="btn-small" (click)=upQt(mobPart)> <i class="material-icons">-</i></a> 
                     </div>
                   </div>
                 </div>
