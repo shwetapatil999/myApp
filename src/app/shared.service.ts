@@ -18,8 +18,7 @@ export class SharedService {
       return sumprods ;
     }
   getData() {
-    // return this._http.get('./../../assets/api/data.json');
-    
+     return this._http.get('./../../assets/api/data.json'); 
   }
 }
 

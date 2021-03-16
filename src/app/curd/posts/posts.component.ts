@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-posts',
@@ -7,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class PostsComponent implements OnInit {
+  posts:any;
 
-  constructor() { }
+  constructor(private _http: HttpClient) {
+  //   this._http.get('https://jsonplaceholder.typicode.com/posts').subscribe((res) => {
+  //   console.log('Res', res);
+  //   this.posts = res;
+  // });
+}
 
   ngOnInit(): void {
+  this._http
+      .get('https://jsonplaceholder.typicode.com/posts')
+      .subscribe((res) => {
+        console.log(' res : ', res);
+        this.posts = res;
+      });
   }
+
 
 }
