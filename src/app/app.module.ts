@@ -1,3 +1,4 @@
+import { CompanyModule } from './company/company.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
@@ -32,7 +33,8 @@ import { PostsComponent } from './curd/posts/posts.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CompanyModule // Another module called herre called featuredc module
   ],
   providers: [],
   bootstrap: [AppComponent]
