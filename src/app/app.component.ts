@@ -1,5 +1,5 @@
 import { MobParts } from './model/mob-part';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MOBPARTS } from './data/mock';
 import { SharedService } from './shared.service';
 
@@ -21,5 +21,9 @@ export class AppComponent {
     //   console.log('data:', data['mobdata']);
     //   this.mp = data['mobdata'];
     // });
+  }
+  @HostListener('click', ['$event'])
+  onhostclick(event: Event) {
+    alert('Hello this is hostListener'); //method decorator
   }
 }

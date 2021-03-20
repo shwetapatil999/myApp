@@ -39,4 +39,8 @@ import { PostsComponent } from './curd/posts/posts.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    console.log("called From Module");// class decorator
+  }
+ }
