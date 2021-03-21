@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sam.component.html',
   styleUrls: ['./sam.component.css']
 })
-export class SamComponent implements OnInit {
+export class SamComponent {
+  checkngif: boolean = true;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  isvalid: boolean = true;
+  changeval(valid:any) {
+    this.isvalid = valid;
   }
-
+  
+  btnClick() {
+    alert('Dom change behaviour on click')  
+  }
 }

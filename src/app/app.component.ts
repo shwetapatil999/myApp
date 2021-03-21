@@ -22,8 +22,8 @@ export class AppComponent {
     //   this.mp = data['mobdata'];
     // });
   }
-  @HostListener('click', ['$event'])
-  onhostclick(event: Event) {
-    alert('Hello this is hostListener'); //method decorator
-  }
+  // @HostListener('click', ['$event'])
+  // onhostclick(event: Event) {
+  //   alert('Hello this is hostListener'); //method decorator
+  // }
 }

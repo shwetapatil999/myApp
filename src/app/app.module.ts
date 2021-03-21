@@ -15,6 +15,7 @@ import { PagenofoundComponent } from './products/pagenofound/pagenofound.compone
 import { HomeComponent } from './products/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { PostsComponent } from './curd/posts/posts.component';
+import { MyserviceService } from './myservice.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { PostsComponent } from './curd/posts/posts.component';
     HttpClientModule,
     CompanyModule // Another module called herre called featuredc module
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

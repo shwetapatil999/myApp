@@ -1,1 +1,24 @@
-<p>sam works!</p>
+<p>Directives</p>
+<div *ngIf="checkngif">This is check ng if codition</div>
+<button (click)="btnClick()">Click me</button>
+<p [ngStyle]="{'color': 'red'}">Error Msg</p>
+<!-- ng if -->
+    <p>
+        <label>
+            <input name="group1" type="radio" (click)="changeval(true)" />
+            <span>True</span>
+        </label>
+    </p>
+    <p>
+        <label>
+            <input name="group1" type="radio" (click)="changeval(false)"/>
+            <span>False</span>
+        </label>
+    </p>
+
+    <div *ngIf="isvalid">
+        This is valid data
+    </div>
+    <div *ngIf="!isvalid">
+        This is invalid data 
+    </div>
