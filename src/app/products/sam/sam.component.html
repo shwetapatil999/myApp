@@ -15,10 +15,18 @@
             <span>False</span>
         </label>
     </p>
-
-    <div *ngIf="isvalid">
-        This is valid data
-    </div>
-    <div *ngIf="!isvalid">
-        This is invalid data 
-    </div>
+<!-- else condition -->
+    <div *ngIf="isvalid; then thenblock; else elseBlock"></div>
+        <ng-template #thenblock>
+            <div>This is valid data - then block </div>
+        </ng-template>    
+        <ng-template #elseBlock>
+            <div>This is invalid data using ng-template. - else block</div>
+        </ng-template>
+<!-- ng for -->
+<ul>
+    <li *ngFor="let student of students; let i=index; let f=first; let l=last; let ev=even; let od=odd">
+        <p>Name: {{i+1}} - {{student.name}} - first : {{f}} - last : {{l}} - even : {{ev}} - Odd : {{od}}</p>
+        <!-- <p>Qualification :{{student.qualification}}</p> -->
+    </li>
+</ul>
