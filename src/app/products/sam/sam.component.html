@@ -1,9 +1,10 @@
 <p>Directives</p>
-<div *ngIf="checkngif">This is check ng if codition</div>
+<!-- <div *ngIf="checkngif">This is check ng if codition</div>
 <button (click)="btnClick()">Click me</button>
-<p [ngStyle]="{'color': 'red'}">Error Msg</p>
+<p [ngStyle]="{'color': 'red'}">Error Msg</p> -->
+
 <!-- ng if -->
-    <p>
+    <!-- <p>
         <label>
             <input name="group1" type="radio" (click)="changeval(true)" />
             <span>True</span>
@@ -14,19 +15,43 @@
             <input name="group1" type="radio" (click)="changeval(false)"/>
             <span>False</span>
         </label>
-    </p>
+    </p> -->
+
 <!-- else condition -->
-    <div *ngIf="isvalid; then thenblock; else elseBlock"></div>
+    <!-- <div *ngIf="isvalid; then thenblock; else elseBlock"></div>
         <ng-template #thenblock>
             <div>This is valid data - then block </div>
         </ng-template>    
         <ng-template #elseBlock>
             <div>This is invalid data using ng-template. - else block</div>
-        </ng-template>
+        </ng-template> -->
+
 <!-- ng for -->
-<ul>
+<!-- <ul>
     <li *ngFor="let student of students; let i=index; let f=first; let l=last; let ev=even; let od=odd">
         <p>Name: {{i+1}} - {{student.name}} - first : {{f}} - last : {{l}} - even : {{ev}} - Odd : {{od}}</p>
-        <!-- <p>Qualification :{{student.qualification}}</p> -->
     </li>
-</ul>
+</ul> -->
+<!-- track by -->
+<table>
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Id </th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Qualification</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let stud of students1; let i=index; trackBy:trackbystudentId">
+            <td>{{i+1}}</td>
+            <td>{{stud.studentId1 }}</td>
+            <td>{{stud.name}}</td>
+            <td>{{stud.gender}}</td>
+            <td>{{stud.qualification}}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<button (click)="getmoreStudents()">Get More Students Data</button>
