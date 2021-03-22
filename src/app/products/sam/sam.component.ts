@@ -16,7 +16,9 @@ export class SamComponent {
   // btnClick() {
   //   alert('Dom change behaviour on click')  
   // }
-
+  // two way binding
+  data: string = 'Webseries';
+  data1: string = 'webappp';
   // ng for advanced track by
   students1: any[]; //var declare
   constructor() {
@@ -84,4 +86,30 @@ export class SamComponent {
   trackbystudentId(index: number, students1: any): string{
     return students1.studentId1;
   }
+  
+  // angular ngfor grouping
+  CountryDetails: any[] = [
+    {
+      'country': 'India',
+      'people': [
+        {
+          'name' : 'shweta'
+        },
+        {
+          'name' : 'Radha'
+        }
+      ]
+    },
+    {
+      'country': 'UK',
+      'people': [
+        {
+          'name': 'John'
+        },
+        {
+          'name': 'Kitty'
+        }
+      ]
+    }
+  ]
 }

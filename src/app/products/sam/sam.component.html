@@ -47,7 +47,7 @@
         <tr *ngFor="let stud of students1; let i=index; trackBy:trackbystudentId">
             <td>{{i+1}}</td>
             <td>{{stud.studentId1 }}</td>
-            <td>{{stud.name}}</td>
+            <td>{{stud.name | uppercase}}</td>
             <td>{{stud.gender}}</td>
             <td>{{stud.qualification}}</td>
         </tr>
@@ -55,3 +55,26 @@
 </table>
 <br>
 <button (click)="getmoreStudents()">Get More Students Data</button>
+
+<!-- Grouping -->
+<ul *ngFor="let group of CountryDetails">
+    <li>{{group.country}}</li>
+    <ul>
+        <li *ngFor="let person of group.people">{{person.name}}</li>
+    </ul>
+</ul>
+
+<!--Two way binding  -->
+<div class="row">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <label for="first_name"></label><br>
+                <input [value]='data' (input)='data=$event.target.value' placeholder="Placeholder">
+                <!-- <input [(ngModel)]='data1' placeholder="Placeholder"> -->
+            </div>
+            <br>
+        </div>
+    </form>
+</div>
+<div>Your Name: {{data}}</div>
