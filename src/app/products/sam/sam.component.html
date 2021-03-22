@@ -41,6 +41,7 @@
             <th>Name</th>
             <th>Gender</th>
             <th>Qualification</th>
+            <th>Currency</th>
         </tr>
     </thead>
     <tbody>
@@ -50,6 +51,7 @@
             <td>{{stud.name | uppercase}}</td>
             <td>{{stud.gender}}</td>
             <td>{{stud.qualification}}</td>
+            <th>{{ stud.currency | currency:'USD':true }}</th>
         </tr>
     </tbody>
 </table>

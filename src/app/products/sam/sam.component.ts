@@ -28,24 +28,28 @@ export class SamComponent {
         'name': 'shweta',
         'gender': 'female',
         'qualification': 'BE',
+        'currency' : 100
       },
       {
         'studentId1': 102,
         'name': 'Swara',
         'gender': 'female',
-        'qualification': 'BE comp'
+        'qualification': 'BE comp',
+        'currency' : 100
       },
       {
         'studentId1': 103,
         'name': 'Pinki',
         'gender': 'female',
-        'qualification': 'BE It'
+        'qualification': 'BE It',
+        'currency' : 100
       },
       {
         'studentId1': 104,
         'name': 'Divya',
         'gender': 'female',
-        'qualification': 'BE ENC'
+        'qualification': 'BE ENC',
+        'currency' : 100
       }
     ];
   }
@@ -56,30 +60,35 @@ export class SamComponent {
         'name': 'shweta',
         'gender': 'female',
         'qualification': 'BE',
+        'currency' : 100
       },
       {
         'studentId1': 102,
         'name': 'Swara',
         'gender': 'female',
-        'qualification': 'BE comp'
+        'qualification': 'BE comp',
+        'currency' : 100
       },
       {
         'studentId1': 103,
         'name': 'Pinki',
         'gender': 'female',
-        'qualification': 'BE It'
+        'qualification': 'BE It',
+        'currency' : 100
       },
       {
         'studentId1': 104,
         'name': 'Divya',
         'gender': 'female',
-        'qualification': 'BE ENC'
+        'qualification': 'BE ENC',
+        'currency' : 100
       },
       {
         'studentId1': 105,
         'name': 'Divya',
         'gender': 'female',
-        'qualification': 'BE ENC'
+        'qualification': 'BE ENC',
+        'currency' : 100
       }
     ];
   }
