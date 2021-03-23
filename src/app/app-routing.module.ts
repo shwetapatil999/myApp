@@ -7,12 +7,12 @@ import { RealmeComponent } from './products/realme/realme.component';
 import { SamComponent } from './products/sam/sam.component';
 
 const routes: Routes = [
-  { path: '', component:HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },/// redirect to `home-component`
   { path: 'home', component:HomeComponent},
   { path:'sam', component:SamComponent },
   { path:'nokiya', component:NokiyaComponent },
   { path:'realme', component:RealmeComponent },
-  { path:'**', component:PagenofoundComponent }
+  { path: '**', component: PagenofoundComponent }//// Wildcard route for a 404 page
 ];
 
 @NgModule({

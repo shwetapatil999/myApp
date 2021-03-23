@@ -17,8 +17,9 @@ export class SamComponent {
   //   alert('Dom change behaviour on click')  
   // }
   // two way binding
-  data: string = 'Webseries';
-  data1: string = 'webappp';
+  // data: string = 'Webseries';
+  // data1: string = 'webappp';
+  
   // ng for advanced track by
   students1: any[]; //var declare
   constructor() {
